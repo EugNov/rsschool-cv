@@ -1,4 +1,3 @@
-
 # Eugeniy Novoseltsev
 
 ## Contacts
@@ -8,7 +7,9 @@
 
 ## Goal
 
-Develop and improve my programming knowledge. Get enough skills to become a web developer and find a job.
+My goal is to develop and improve my programming knowledge. I really enjoy creating websites.
+This is what I would like to do. I want to find a mentor to help me.
+In the future, I dream of becoming a web developer and finding a job in the frontend.
 
 ## Self-education
 

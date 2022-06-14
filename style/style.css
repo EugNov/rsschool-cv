@@ -78,7 +78,6 @@ body {
 }
 
 .aside-container {
-    /* width: 37%; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -139,13 +138,13 @@ h1::after {
     display block;
 }
 
-h2 {
+.aside-section-title {
     position: relative;
     margin-bottom: 80px;
     margin-top: 127px;
 }
 
-h2::after {
+.aside-section-title::after {
     content: "";
     position: absolute;
     top: 25px;
@@ -197,6 +196,78 @@ h2::after {
 .language li {
     list-style-type: none;
     margin-bottom: 25px;
+}
+
+
+
+.goal {
+    padding: 12px 145px;
+}
+
+.main-section-title {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 127px;
+}
+
+.main-section-title::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+.code {
+    padding: 30px 145px;
+}
+
+.pre {
+    margin: 0;
+}
+
+.projects {
+    color: #000;
+    text-decoration: none;
+}
+
+.project-icon {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+}
+
+.skills {
+    margin: 0;
+    padding: 10px 145px;
+}
+
+.skills-title {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 77px;
+}
+
+.skills-title::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    margin-top: 45px;
+    display block;
 }
 
 .footer {
