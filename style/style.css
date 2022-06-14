@@ -11,15 +11,23 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
 }
-
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.nav {
+    background:
+        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 .nav-list {
@@ -27,6 +35,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    margin: 0;
+    padding: 32px;
 }
 
 .nav-link {
@@ -37,7 +47,6 @@ body {
 
 .nav-item a {
     font-weight: 300;
-    /* font-size: 24px; */
     color: #000;
     text-decoration: none;
     transition: color 0.5s;
@@ -50,8 +59,8 @@ body {
 .nav-item a:after {
     display: block;
     content: "";
-    background-color: rgba(44, 50, 61, 1);
-    height: 3px;
+    background-color: #333539;
+    height: 2px;
     width: 0%;
     left: 50%;
     position: absolute;
@@ -111,4 +120,119 @@ body {
 .main-subtitle {
     font-weight: 300;
     padding-left: 137px;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 180px;
+    width: 160px;
+    height: 2px;
+    background-color: #000;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 127px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    background-color: #fff;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.contacts li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.contacts li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.education {
+    padding: 0;
+}
+
+.education li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.language {
+    padding: 0;
+}
+
+.language li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 32px;
+    background:
+        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-logo-github {
+    padding-left: 25px;
+    padding-top: 3px;
+}
+
+.year {
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: #fff;
+}
+
+.footer-logo-rss {
+    padding-right: 145px;
 }
