@@ -193,6 +193,11 @@ h1::after {
     margin-right: 5px;
 }
 
+.social-link:hover {
+    color: rgba(44, 50, 61, 1);
+    background-color: #fff;
+}
+
 .contacts li {
     list-style-type: none;
     margin-bottom: 25px;
@@ -220,8 +225,6 @@ h1::after {
     list-style-type: none;
     margin-bottom: 25px;
 }
-
-
 
 .goal {
     padding: 12px 145px;
