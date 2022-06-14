@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav {
+    background:
+        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 32px 32px 48px 32px;
+}
+
+.nav-link {
+    transition: .3s;
+}
+
+.nav-item a {
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.5s;
+    display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.nav-skills {
+    padding-right: 27px;
+}
+
+.nav-language {
+    padding-right: 50px;
+}
+
+.nav-code {
+    padding-right: 48px;
+}
+
+.nav-education {
+    padding-right: 48px;
+}
+
+.nav-goal {
+    padding-right: 52px;
+}
+
+.nav-contacts {
+    padding-right: 52px;
+}
+
+.nav-item a:after {
+    display: block;
+    content: "";
+    background-color: #333539;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.nav-item a:hover:after,
+.nav-item a:focus:after {
+    width: 125%;
+}
+
+.aside-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 133px;
+    padding-top: 157px;
+    background-color: rgba(44, 50, 61, 1);
+    color: #fff;
+}
+
+.avatar {
+    width: 266px;
+    height: 266px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.main {
+    width: 63%;
+    background-color: #fff;
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-family: poppins-semibold;
+    font-size: 72px;
+    padding-left: 137px;
+    padding-top: 200px;
+    margin: 0;
+}
+
+.main-subtitle {
+    font-weight: 300;
+    padding-left: 137px;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 180px;
+    width: 160px;
+    height: 2px;
+    background-color: #000;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+.aside-section-title {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 127px;
+}
+
+.aside-section-title::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    background-color: #fff;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.social-link:hover {
+    color: rgba(44, 50, 61, 1);
+    background-color: #fff;
+}
+
+.contacts li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.contacts li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.education {
+    padding: 0;
+}
+
+.education li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.language {
+    padding: 0;
+}
+
+.language li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.goal {
+    padding: 12px 145px;
+}
+
+.main-section-title {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 123px;
+}
+
+.main-section-title::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+.code {
+    padding: 30px 145px;
+}
+
+.pre {
+    margin: 0;
+}
+
+.projects {
+    color: #000;
+    text-decoration: none;
+}
+
+.projects:hover {
+    color: #fff;
+    background-color: rgba(44, 50, 61, 1);
+}
+
+.project-icon {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+}
+
+.skills {
+    margin: 0;
+    padding: 10px 145px;
+}
+
+.skills-title {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 105px;
+}
+
+.skills-title::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    margin-top: 45px;
+    display block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 31px;
+    background:
+        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-logo-github {
+    padding-left: 25px;
+    padding-top: 3px;
+}
+
+.year {
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: #fff;
+}
+
+.footer-logo-rss {
+    padding-right: 145px;
+}
