@@ -259,6 +259,11 @@ h1::after {
     text-decoration: none;
 }
 
+.projects:hover {
+    color: #fff;
+    background-color: rgba(44, 50, 61, 1);
+}
+
 .project-icon {
     width: 60px;
     margin-right: 5px;
